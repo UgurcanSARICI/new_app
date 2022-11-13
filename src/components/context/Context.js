@@ -31,6 +31,9 @@ export const ContextProvider = ({ children }) => {
       };
       setUserData([...userData, newContact]);
       saveToDatabase(newContact);
+      setUserName("");
+      setGender("");
+      setPhoneNumber("");
     } else {
       saveToDatabase();
     }
