@@ -2,14 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAX9EbFGIYuCFd_954Da6zTh4Gz7roNH78",
-  authDomain: "project-new-f34b5.firebaseapp.com",
-  projectId: "project-new-f34b5",
-  databaseURL:
-    "https://project-new-f34b5-default-rtdb.europe-west1.firebasedatabase.app/",
-  storageBucket: "project-new-f34b5.appspot.com",
-  messagingSenderId: "884530625219",
-  appId: "1:884530625219:web:46f1651a91168471a8c076",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  databaseURL: process.env.REACT_APP_DATABASEURL,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID,
 };
 
 // Initialize Firebase

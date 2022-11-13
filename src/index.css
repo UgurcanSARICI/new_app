@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 .app {
-  background: linear-gradient(45deg, #26999d 20%, transparent 20%),
-    linear-gradient(135deg, transparent 80%, #26999d 80%),
-    radial-gradient(#26999d 20%, transparent 21%);
-  background-size: 3em 3em;
-  background-color: #ffffff;
-  opacity: 1;
+  background: #360033; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0b8793,
+    #360033
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0b8793,
+    #360033
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
