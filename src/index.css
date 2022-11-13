@@ -3,27 +3,10 @@
 @tailwind utilities;
 
 .app {
-  background: linear-gradient(
-      45deg,
-      #4f46e4 20%,
-      transparent 20%,
-      transparent 80%,
-      #4f46e4 80%,
-      #4f46e4 100%
-    ),
-    linear-gradient(
-      135deg,
-      #4f46e4 20%,
-      transparent 20%,
-      transparent 80%,
-      #4f46e4 80%,
-      #4f46e4 100%
-    ),
-    radial-gradient(circle at top, #4f46e4 20%, transparent 21%),
-    radial-gradient(circle at bottom, #4f46e4 20%, transparent 21%),
-    radial-gradient(circle at right, #4f46e4 20%, transparent 21%),
-    radial-gradient(circle at left, #4f46e4 20%, transparent 21%);
-  background-size: 5em 5em;
+  background: linear-gradient(45deg, #26999d 20%, transparent 20%),
+    linear-gradient(135deg, transparent 80%, #26999d 80%),
+    radial-gradient(#26999d 20%, transparent 21%);
+  background-size: 3em 3em;
   background-color: #ffffff;
-  opacity: 0.7;
+  opacity: 1;
 }
